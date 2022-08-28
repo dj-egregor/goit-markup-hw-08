@@ -1,0 +1,65 @@
+.main-nav {
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 50px;
+        position: relative;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__link {
+        display: block;
+
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--links-text-color-default);
+
+        @media screen and (min-width: 768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__link--active::after {
+        position: absolute;
+        content: '';
+        background-color: currentColor;
+        border: 1px solid var(--links-text-color-hover);
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -1px;
+        display: block;
+    }
+
+    &__link:hover,
+    &__link:focus,
+    &__link--active {
+        color: var(--links-text-color-hover);
+    }
+
+    &__link,
+    &__link--active {
+        transition-property: color;
+        transition-duration: var(--time-to-animate);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

@@ -1,0 +1,30 @@
+@import './vendors/_module';
+@import './base/_module';
+@import './utils/module';
+@import './components/_module';
+@import './layout/module';
+
+.envelope-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*--------------------------------------- Header */
+
+/* -------------------Portfolio------------------- */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
