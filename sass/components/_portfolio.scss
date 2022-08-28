@@ -25,7 +25,8 @@
 
     &__item {
         background-color: var(--background-item-list-color);
-        border-bottom: 1px solid var(--border-item-list-color);
+        // border-bottom: 1px solid var(--border-item-list-color);
+        // height: 100%;
 
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
@@ -71,12 +72,12 @@
     }
 
     &__description-text {
-        height: 100%;
+        // height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         display: block;
-        padding: 63px 24px;
+        padding: 77px 24px;
         background-color: rgba(33, 150, 243, 0.9);
         font-size: 18px;
         line-height: 1.56;
@@ -85,6 +86,14 @@
         transform: translateY(100%);
         transition-duration: var(--time-to-animate);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 480px) {
+            padding: 77px 24px;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 63px 24px;
+        }
     }
 
     &__item:hover .portfolio-list__description-text,
