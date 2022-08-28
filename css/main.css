@@ -1036,6 +1036,7 @@ img {
   height: auto;
 }
 .portfolio-list__description-text {
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
