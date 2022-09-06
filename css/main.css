@@ -248,6 +248,7 @@ picture {
 @media screen and (min-width: 1200px) {
   .container--footer-flex {
     flex-direction: row;
+    text-align: unset;
   }
 }
 .container--header-flex {
@@ -1473,6 +1474,7 @@ picture {
 @media screen and (min-width: 768px) {
   .footer__social-links-container {
     margin-left: 165px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
